@@ -9,15 +9,14 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `DECKsert`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Davide Scarioni`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Un blog che parla della mia esperienza con Steam Deck`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `5c4r10`,
     },
   },
   plugins: [
