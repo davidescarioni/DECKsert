@@ -280,6 +280,12 @@ a:focus {
   margin-bottom: var(--spacing-4);
 }
 
+/*.post a {
+  border: 2px solid var(--color-primary);
+  padding: 0 .2rem;
+  text-decoration: none;
+}*/
+
 .header-link-home {
   font-weight: var(--fontWeight-bold);
   font-family: var(--font-heading);
