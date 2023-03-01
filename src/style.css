@@ -81,10 +81,6 @@ body {
   color: var(--color-text);
 }
 
-footer {
-  padding: var(--spacing-6) var(--spacing-0);
-}
-
 hr {
   background: var(--color-accent);
   height: 1px;
@@ -240,9 +236,6 @@ a:focus {
 /* Custom classes */
 
 .global-wrapper {
-  margin: var(--spacing-0) auto;
-  max-width: var(--maxWidth-wrapper);
-  padding: var(--spacing-10) var(--spacing-5);
   min-height: 100dvh;
   position: relative;
 }
@@ -253,6 +246,12 @@ a:focus {
 
 .global-header {
   margin-bottom: var(--spacing-12);
+}
+
+.main {
+  margin: var(--spacing-0) auto;
+  max-width: var(--maxWidth-wrapper);
+  padding: var(--spacing-10) var(--spacing-5);
 }
 
 .main-heading {
@@ -285,6 +284,10 @@ a:focus {
   padding: 0 .2rem;
   text-decoration: none;
 }*/
+
+.header__content-wrapper {
+  padding: 8px;
+}
 
 .header-link-home {
   font-weight: var(--fontWeight-bold);
@@ -339,7 +342,22 @@ a:focus {
   }
 }
 
-footer {
+.footer {
   position: absolute;
   bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--spacing-3) var(--spacing-3);
+  background-color: var(--color-primary);
+  color: white;
+  font-size: var(--fontSize-0);
 }
+
+.footer__content-wrapper, .header__content-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.footer__link {
+  color: white;
+} 
