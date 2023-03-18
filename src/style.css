@@ -286,7 +286,7 @@ a:focus {
 }*/
 
 .header__content-wrapper {
-  padding: 8px;
+  padding: 8px var(--spacing-5) 0;
 }
 
 .header-link-home {

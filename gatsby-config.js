@@ -38,8 +38,7 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
-          {
+        plugins: [{
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 630,
@@ -72,20 +71,26 @@ module.exports = {
             }
           }
         `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.nodes.map(node => {
-                return Object.assign({}, node.frontmatter, {
-                  description: node.excerpt,
-                  date: node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + node.fields.slug,
-                  custom_elements: [{ "content:encoded": node.html }],
-                })
+        feeds: [{
+          serialize: ({
+            query: {
+              site,
+              allMarkdownRemark
+            }
+          }) => {
+            return allMarkdownRemark.nodes.map(node => {
+              return Object.assign({}, node.frontmatter, {
+                description: node.excerpt,
+                date: node.frontmatter.date,
+                url: site.siteMetadata.siteUrl + node.fields.slug,
+                guid: site.siteMetadata.siteUrl + node.fields.slug,
+                custom_elements: [{
+                  "content:encoded": node.html
+                }],
               })
-            },
-            query: `{
+            })
+          },
+          query: `{
               allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
                 nodes {
                   excerpt
@@ -100,10 +105,9 @@ module.exports = {
                 }
               }
             }`,
-            output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
-          },
-        ],
+          output: "/rss.xml",
+          title: "Gatsby Starter Blog RSS Feed",
+        }, ],
       },
     },
     {
@@ -117,7 +121,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/deck.svg`, // This path is relative to the root of the site.
       },
     },
   ],
