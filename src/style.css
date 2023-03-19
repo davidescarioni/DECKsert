@@ -323,6 +323,21 @@ a:focus {
   margin: var(--spacing-0);
 }
 
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "";
+  background-color: var(--color-primary);
+  border-radius: 100%;
+  display: inline-block;
+  width: .5em;
+  aspect-ratio: 1;
+  margin-right: .5em;
+  margin-bottom: .1em;
+}
+
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
 }
