@@ -346,6 +346,11 @@ a:focus {
   font-family: var(--font-heading);
 }
 
+.blog-post header .blog-post__date {
+  font-size: var(--fontSize-0);
+  margin: var(--spacing-0);
+}
+
 .blog-post-nav ul {
   margin: var(--spacing-0);
 }

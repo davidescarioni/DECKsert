@@ -25,4 +25,6 @@ A questo punto navigiamo nella cartella _.steam/steam/userdata/{id}/760/remote/_
 
 Sempre in modalità desktop, clickiamo con il tasto destro del mouse sull'icona di Steam nella barra di sistema, e scegliamo _Settings_: alla voce _In-Game_ c'è il pulsante **Screenshot folder**: da lì possiamo scegliere dove salvare d'ora in avanti i nostri screenshot.
 
+![Cambiare la cartella di salvataggio degli screenshots"](./how-to-change-screenshot-folder.png)
+
 Davide
